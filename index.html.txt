@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Санитары рынка — Партнёрство Capital Shield AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0B0E17;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            color: #E8EDF5;
+            line-height: 1.5;
+            padding: 0 16px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0 60px;
+        }
+        /* Typography */
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .gradient-gold {
+            background: linear-gradient(135deg, #F5C542, #E8A83E);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .subhead {
+            font-size: 20px;
+            color: #9CA3AF;
+            margin-bottom: 32px;
+            max-width: 700px;
+            line-height: 1.5;
+        }
+        .badge {
+            display: inline-block;
+            background: #1A1F2C;
+            border: 1px solid #2A2F3F;
+            border-radius: 40px;
+            padding: 4px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #9CA3AF;
+            margin-bottom: 24px;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -0.01em;
+        }
+        .section-sub {
+            font-size: 18px;
+            color: #9CA3AF;
+            margin-bottom: 40px;
+            max-width: 700px;
+        }
+        /* Cards & Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .card {
+            background: #12161F;
+            border-radius: 24px;
+            padding: 28px 24px;
+            border: 1px solid #2A2F3F;
+            transition: all 0.2s;
+        }
+        .card:hover {
+            border-color: #F5C542;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(245, 197, 66, 0.05);
+        }
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: #9CA3AF;
+            line-height: 1.5;
+        }
+        .card-highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #F5C542;
+            margin-top: 12px;
+        }
+        /* Steps */
+        .step-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 32px 0;
+        }
+        .step-item {
+            flex: 1 1 180px;
+            background: #12161F;
+            border-radius: 20px;
+            padding: 20px 18px;
+            border: 1px solid #2A2F3F;
+            text-align: center;
+        }
+        .step-num {
+            display: inline-block;
+            background: #1A1F2C;
+            color: #F5C542;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 2px 12px;
+            border-radius: 30px;
+            margin-bottom: 12px;
+        }
+        .step-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .step-desc {
+            font-size: 13px;
+            color: #9CA3AF;
+        }
+        /* CTA */
+        .cta-block {
+            background: #12161F;
+            border-radius: 32px;
+            padding: 48px 40px;
+            text-align: center;
+            border: 1px solid #2A2F3F;
+            margin-top: 48px;
+        }
+        .btn-gold {
+            display: inline-block;
+            background: #F5C542;
+            color: #0B0E17;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 16px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin: 16px 0;
+        }
+        .btn-gold:hover {
+            background: #E0B030;
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(245, 197, 66, 0.2);
+        }
+        .link-light {
+            font-size: 14px;
+            color: #6B7280;
+        }
+        .link-light a {
+            color: #F5C542;
+            text-decoration: none;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subhead { font-size: 17px; }
+            .section-title { font-size: 26px; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .cta-block { padding: 32px 20px; }
+            .step-item { flex: 1 1 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Блок 1. Герой -->
+        <div>
+            <span class="badge">🔥 ПАРТНЁРСКАЯ ПРОГРАММА</span>
+            <h1>
+                Зарабатывайте от <span class="gradient-gold">50% до 100%</span><br>
+                чистой прибыли с каждой сделки
+            </h1>
+            <p class="subhead">
+                Продавайте услуги нашего сервиса как свои собственные — с наценкой в 2–3 раза. <br>
+                Мы делаем работу, вы забираете деньги. <br>
+                <strong style="color:#E8EDF5;">Франшиза не нужна, навыки не нужны, капитал не нужен.</strong>
+            </p>
+        </div>
+
+        <!-- Блок 2. Как и сколько зарабатываете -->
+        <div style="margin-top: 56px;">
+            <h2 class="section-title">Как и сколько вы зарабатываете</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <div class="card-title">Свободная цена</div>
+                    <div class="card-desc">
+                        Наша базовая цена — <strong style="color:#E8EDF5;">$10 · $20 · $30 · $100 · $300</strong>.<br>
+                        Вы ставите свою — <strong style="color:#F5C542;">в 2–3 раза выше</strong>. Вся наценка — ваша.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-title">Моментальный доход</div>
+                    <div class="card-desc">
+                        Клиент платит вам. Вы переводите нам базовую цену.<br>
+                        <strong style="color:#F5C542;">Вся разница — у вас в кармане уже в момент сделки.</strong>
+                    </div>
+                </div>
+                <div class="card" style="grid-column: 1 / -1;">
+                    <div class="card-icon">💎</div>
+                    <div class="card-title">Высокий чек</div>
+                    <div class="card-desc">
+                        Один заказ на проверку контрагента может принести вам <strong style="color:#F5C542;">$200–$500 чистыми</strong>.<br>
+                        Три таких заказа в месяц — и вы зарабатываете как топ-менеджер.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 3. Схема работы -->
+        <div style="margin-top: 48px;">
+            <h2 class="section-title">Схема работы: ноль рисков, максимум эффективности</h2>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Вступаете</div>
+                    <div class="step-desc">Вход в сообщество «Санитары рынка» — бесплатно</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Получаете</div>
+                    <div class="step-desc">Скрипты, посты, инструкции — готовый набор</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Находите</div>
+                    <div class="step-desc">Клиента и принимаете оплату по своей цене</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <div class="step-title">Передаёте</div>
+                    <div class="step-desc">Данные нам, оплачиваете базовую цену</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">5</div>
+                    <div class="step-title">Зарабатываете</div>
+                    <div class="step-desc">Получаете PDF-отчёт, отдаёте клиенту и фиксируете доход</div>
+                </div>
+            </div>
+            <p style="color: #9CA3AF; margin-top: 8px; font-size: 14px; text-align: center;">
+                <strong style="color:#E8EDF5;">Вы не рискуете ничем:</strong> вы платите нам только после того, как клиент заплатил вам.
+            </p>
+        </div>
+
+        <!-- Блок 4. Почему это работает -->
+        <div style="margin-top: 56px;">
+            <h2 class="section-title">Почему этот продукт продаёт себя сам</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🔥</div>
+                    <div class="card-title">Спрос бьёт рекорды</div>
+                    <div class="card-desc">
+                        Скамов стало больше, доверия — меньше. Инвесторы и бизнесмены готовы платить за проверку. <strong style="color:#E8EDF5;">Рынок — огромен.</strong>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <div class="card-title">Вы ничем не рискуете</div>
+                    <div class="card-desc">
+                        Вы платите нам <strong style="color:#E8EDF5;">только после</strong> того, как клиент заплатил вам. Нет предоплат, нет закупок, нет простоев.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">Вы продаёте защиту</div>
+                    <div class="card-desc">
+                        Вы не продаёте «очередной проект». Вы продаёте <strong style="color:#E8EDF5;">безопасность</strong>. Это уважает, это ценится, за это платят.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 5. Призыв -->
+        <div class="cta-block">
+            <span class="badge" style="margin-bottom: 16px;">🔥 ВАШ ХОД</span>
+            <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 12px;">
+                Рынок финансовой безопасности — огромен.<br>
+                <span class="gradient-gold">А специалистов на нём — единицы.</span>
+            </h2>
+            <p style="font-size: 16px; color: #9CA3AF; margin-bottom: 24px;">
+                Напишите админу сообщества слово <strong style="color:#E8EDF5;">«Франшиза»</strong>, и мы:
+            </p>
+            <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; margin-bottom: 28px; font-size: 14px; color: #D1D9E6;">
+                <li>✅ Свяжемся в течение 15 минут</li>
+                <li>✅ Ответим на все вопросы</li>
+                <li>✅ Заведём в закрытую группу «Санитары рынка»</li>
+                <li>✅ Выдадим стартовый пакет материалов</li>
+            </ul>
+            <a href="https://t.me/capitalshield_ai" target="_blank" class="btn-gold">👉 НАПИСАТЬ АДМИНУ</a>
+            <div class="link-light">
+                🔗 <a href="https://t.me/capitalshield_ai" target="_blank">t.me/capitalshield_ai</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center; font-size: 13px; color: #4B5563; border-top: 1px solid #1A1F2C; padding-top: 24px;">
+            © 2026 Capital Shield AI · «Санитары рынка» — сообщество партнёров
+        </div>
+
+    </div>
+</body>
+</html>
